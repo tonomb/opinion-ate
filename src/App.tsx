@@ -1,9 +1,11 @@
 import React from 'react';
 
+import RestaurantScreen from './components/RestaurantScreen';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div>
+      <RestaurantScreen />
     </div>
   );
 }
