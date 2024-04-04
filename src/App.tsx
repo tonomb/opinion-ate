@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
+import {Provider} from 'react-redux';
+import store from './store';
+
+import RestaurantScreen from './components/RestaurantScreen';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Opinion Ate Starter</h1>
-    </div>
+    <Provider store={store}>
+      <RestaurantScreen />
+    </Provider>
   );
 }
 
