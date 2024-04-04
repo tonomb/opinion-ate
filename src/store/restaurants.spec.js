@@ -1,12 +1,12 @@
 import {configureStore} from '@reduxjs/toolkit';
 import restaurants from './restaurants/reducers';
-import thunk from 'redux-thunk';
 
+//Actions
 import {loadRestaurants} from './restaurants/actions';
 
 describe('restaurants', () => {
   describe('loadRestaurants action', () => {
-    it('stores the restaurants', async () => {
+    it('stores the restaurants in state', async () => {
       const records = [
         {
           id: 1,
