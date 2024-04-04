@@ -1,7 +1,7 @@
 import {render, screen} from '@testing-library/react';
-import RestaurantList from '../RestaurantList';
+import {RestaurantList} from '../RestaurantList';
 
-describe('RestaurantList', () => {
+describe('<RestaurantList />', () => {
   const restaurants = [
     {id: 1, name: 'Sushi Place'},
     {id: 2, name: 'Pizza Place'},
@@ -25,7 +25,7 @@ describe('RestaurantList', () => {
     expect(loadRestaurants).toHaveBeenCalled();
   });
 
-  it('Should Display the restaurants', () => {
+  it('Should display the restaurants', () => {
     renderComponent();
 
     expect(screen.getByText('Sushi Place')).toBeInTheDocument();
